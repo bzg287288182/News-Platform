@@ -1,4 +1,6 @@
 """
+1.集成配置类
+2.集成sqalchemy到flask
 5.集成flask-session
 """
 
