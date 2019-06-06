@@ -1,16 +1,24 @@
 """
 1.集成配置类
 2.集成sqalchemy到flask
+3.集成redis
+4.集成csrfrotect
 5.集成flask-session
+6.集成flask-script
+7.集成flask-migrate
 """
 
 from flask import Flask, session
+from flask_migrate import Migrate, MigrateCommand
+from flask_script import Manager
 from flask_sqlalchemy import SQLAlchemy
 from redis import StrictRedis
 from flask_wtf import CSRFProtect
 from flask_session import Session
 
+
 class Config(object):
+    SECRET_KEY = "12421312"
     DEBUG = True
 
     SQLALCHEMY_DATABASE_URI = "mysql://root:mysql@127.0.0.1:3306/Information"
@@ -43,6 +51,7 @@ app.config.from_object(Config)
 # 2.集成sqlalchemy到flask
 db = SQLAlchemy(app)
 
+
 # 3.集成redis 可以把容易产生变化的值放入到配置中
 redis_store = StrictRedis(host=Config.REDIS_HOST, port=Config.REDIS_PORT)
 
@@ -55,7 +64,12 @@ CSRFProtect(app)
 # 说明：flask中的session是保存用户数据的容器（上下文）,而flask_session中的Session是制定session的保存路径
 Session(app)
 
+# 6.集成flask-script
+manager = Manager(app)
 
+# 7.集成flask-migrate， 在flask中对数据库进行迁移
+Migrate(app,db)
+manager.add_command("db", MigrateCommand)
 
 
 @app.route('/')
