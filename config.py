@@ -2,7 +2,7 @@ import logging
 from redis import StrictRedis
 
 
-__all__ = ["DevelopConfig", "Config","ProductConfig","TestingConfig"]
+# __all__ = ["DevelopConfig", "Config","ProductConfig","TestingConfig"]
 
 
 class Config(object):
@@ -33,6 +33,7 @@ class Config(object):
 
 class DevelopConfig(Config):
     DEBUG = True
+    LOG_LEVEL = logging.ERROR
 
 
 class ProductConfig(Config):

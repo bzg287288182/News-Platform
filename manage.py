@@ -7,7 +7,7 @@
 6.集成flask-script
 7.集成flask-migrate
 """
-
+import logging
 from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
 from info import create_app,db
@@ -27,7 +27,13 @@ manager.add_command("db", MigrateCommand)
 
 @app.route('/')
 def index():
+    logging.debug("debug")
+    logging.error("error")
+    logging.warning(("warning"))
+    logging.info("info")
+    logging.fatal("fatal")
+
     return 'Hello World'
 
 if __name__ == '__main__':
-    manager.run()
+    app.run()
