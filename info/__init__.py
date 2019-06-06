@@ -1,6 +1,5 @@
 # 创建一个存放业务逻辑的包
 from logging.handlers import RotatingFileHandler
-
 from flask import Flask
 import logging
 from config import config, Config
@@ -8,15 +7,17 @@ from flask_sqlalchemy import SQLAlchemy
 from redis import StrictRedis
 from flask_wtf import CSRFProtect
 from flask_session import Session
+# from info.modules.index import index_blu
 
 # config = {
 #     "develop":DevelopConfig,
 #     "product":ProductConfig,
 #     "testing":TestingConfig
 # }
-from info.modules.index import index_blu
 
 db = SQLAlchemy()
+
+redis_store = None  # type:index_blu
 
 
 def set_log(config_name):
@@ -36,6 +37,7 @@ def set_log(config_name):
 # 只要是可变的参数，1,可以放在配置文件中，2.用函数封装 3.用全局变量
 # 把所有可变的参数用函数的形参来代替
 def create_app(config_name, ):
+    global redis_store
     set_log(config_name)
     app = Flask(__name__)
 
@@ -63,6 +65,9 @@ def create_app(config_name, ):
     # 集成flask-session
     # 说明：flask中的session是保存用户数据的容器（上下文）,而flask_session中的Session是制定session的保存路径
     Session(app)
+    # 注册蓝图
+    # 对于index_nlu只导入一次，什么时候调用，什么时候导入
+    from info.modules.index import index_blu
     app.register_blueprint(index_blu)
 
     return app
