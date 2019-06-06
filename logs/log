@@ -1,0 +1,15 @@
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+DEBUG manage.py:30 debug
+ERROR manage.py:31 error
+WARNING manage.py:32 warning
+INFO manage.py:33 info
+CRITICAL manage.py:34 fatal
+INFO _internal.py:122 127.0.0.1 - - [06/Jun/2019 15:52:09] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [06/Jun/2019 16:36:40] "GET / HTTP/1.1" 200 -

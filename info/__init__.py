@@ -14,7 +14,7 @@ from flask_session import Session
 #     "product":ProductConfig,
 #     "testing":TestingConfig
 # }
-
+from info.modules.index import index_blu
 
 db = SQLAlchemy()
 
@@ -63,5 +63,6 @@ def create_app(config_name, ):
     # 集成flask-session
     # 说明：flask中的session是保存用户数据的容器（上下文）,而flask_session中的Session是制定session的保存路径
     Session(app)
+    app.register_blueprint(index_blu)
 
     return app
