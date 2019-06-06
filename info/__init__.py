@@ -1,16 +1,26 @@
 # 创建一个存放业务逻辑的包
 
 from flask import Flask
-from config import Config
+from config import config, Config
 from flask_sqlalchemy import SQLAlchemy
 from redis import StrictRedis
 from flask_wtf import CSRFProtect
 from flask_session import Session
 
 
+
+# config = {
+#     "develop":DevelopConfig,
+#     "product":ProductConfig,
+#     "testing":TestingConfig
+# }
+
 app = Flask(__name__)
+
+
 # 1.集成配置类
-app.config.from_object(Config)
+
+app.config.from_object(config["product"])
 # app.config.from_object(Config)
 # app.config.from_pyfile()
 # app.config.from_envvar()

@@ -1,5 +1,8 @@
+import logging
 from redis import StrictRedis
 
+
+__all__ = ["DevelopConfig", "Config","ProductConfig","TestingConfig"]
 
 
 class Config(object):
@@ -24,3 +27,26 @@ class Config(object):
     SESSION_PERMANENT = False
     # 设置session保存时间
     PERMANENT_SESSION_LIFETIME = 86400 * 2
+
+
+
+
+class DevelopConfig(Config):
+    DEBUG = True
+
+
+class ProductConfig(Config):
+    DEBUG = False
+
+
+class TestingConfig(Config):
+    pass
+
+
+
+# 使用字典去封装
+config = {
+    "develop":DevelopConfig,
+    "product":ProductConfig,
+    "testing":TestingConfig
+}
