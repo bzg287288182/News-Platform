@@ -40,7 +40,7 @@ class ProductConfig(Config):
 
 
 class TestingConfig(Config):
-    pass
+    DEBUG = True
 
 
 
