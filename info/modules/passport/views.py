@@ -4,8 +4,11 @@ from info import constants, redis_store
 from info.modules.passport import passport_blu
 from info.utils.captcha.captcha import captcha
 
+
 # 1.请求的url
 # 2.请求的方式
+# 3.请求的参数
+# 4.返回给前段的参数和参数类型
 @passport_blu.route("/sms_code", methods=["POST"])
 def get_sms_code():
     """
@@ -25,13 +28,10 @@ def get_sms_code():
     # 如何去接收一个前段传入的json类型的数据
     dict_data = request.json
 
-    #1.接收参数 mobile, image_code, image_code_id
+    # 1.接收参数 mobile, image_code, image_code_id
     mobile = dict_data.get("mobile")
     image_code = dict_data.get("image_code")
     image_code_id = dict_data.get("image_code_id")
-
-
-
 
 
 @passport_blu.route("/image_code")
@@ -40,7 +40,7 @@ def get_image_code():
     1.接受参数
     2.校验参数是否存在
     3.生成验证码 captcha
-    4.把随机的字符串生成的文本验证码以key，ｖａｌｕｅ的形式保存到redis
+    4.把随机的字符串生成的文本验证码以key，value的形式保存到redis
     5.把图片验证码返回给浏览器
     :return:
     """
@@ -55,7 +55,7 @@ def get_image_code():
 
     # 4. 把随机的字符串和生成的文本验证码以
     try:
-        redis_store.setex("ImageCodeId_" + image_code_id, constants.IMAGE_CODE_REDIS_EXPIRES ,text)
+        redis_store.setex("ImageCodeId_" + image_code_id, constants.IMAGE_CODE_REDIS_EXPIRES, text)
     except Exception as e:
         current_app.logger.error(e)
         abort(500)
@@ -64,4 +64,3 @@ def get_image_code():
     response.headers["Content-Type"] = "image/jpg"
 
     return response
-
