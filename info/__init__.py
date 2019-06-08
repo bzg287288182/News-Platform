@@ -69,6 +69,7 @@ def create_app(config_name, ):
     # 对于index_nlu只导入一次，什么时候调用，什么时候导入
     from info.modules.index import index_blu
     app.register_blueprint(index_blu)
+
     from info.modules.passport import passport_blu
     app.register_blueprint(passport_blu)
 

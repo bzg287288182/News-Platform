@@ -4,6 +4,17 @@ from info import constants, redis_store
 from info.modules.passport import passport_blu
 from info.utils.captcha.captcha import captcha
 
+# 1.请求的url
+@passport_blu.route("/sms_code", methods=["POST"])
+def get_sms_code():
+    """
+
+    :return:
+    """
+
+
+
+
 @passport_blu.route("/image_code")
 def get_image_code():
     """
@@ -33,5 +44,5 @@ def get_image_code():
     response = make_response(image)
     response.headers["Content-Type"] = "image/jpg"
 
-    return image
+    return response
 

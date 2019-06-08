@@ -117,3 +117,144 @@ INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit
 INFO _internal.py:122  * Restarting with stat
 WARNING _internal.py:122  * Debugger is active!
 INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:10:19] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:28:05] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:28:06] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:28:06] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:28:06] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:31:03] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:31:33] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:31:35] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:31:35] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:31:35] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:31:35] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:31:35] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:31:35] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:31:35] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:31:35] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:31:35] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:31:35] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:31:35] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:31:35] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:31:35] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+ERROR views.py:30 Error 111 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:31:37] "GET /passport/image_code?imageCodeId=65dbb18c-9583-454e-8a2f-ba67d83f5ccd HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:31:37] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+ERROR views.py:30 Error 111 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:31:42] "GET /passport/image_code?imageCodeId=e375ce11-bd2b-4726-ae7e-b5af506e9810 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:37:09] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:37:09] "GET /favicon.ico HTTP/1.1" 200 -
+ERROR views.py:30 Error 111 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:37:11] "GET /passport/image_code?imageCodeId=faef7603-7bc0-43af-a718-47979ef17d5c HTTP/1.1" 500 -
+ERROR views.py:30 Error 111 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:37:12] "GET /passport/image_code?imageCodeId=fa511a84-ee81-4677-8e7c-1b452edde4f7 HTTP/1.1" 500 -
+ERROR views.py:30 Error 111 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:37:14] "GET /passport/image_code?imageCodeId=3f2fd231-5b96-4214-ada1-ba8dce980b71 HTTP/1.1" 500 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:58:56] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:00] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:00] "GET /favicon.ico HTTP/1.1" 200 -
+ERROR views.py:30 Error 111 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:02] "GET /passport/image_code?imageCodeId=5ce548b6-aeee-496a-86bb-74241ddeb70b HTTP/1.1" 500 -
+ERROR views.py:30 Error 111 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:05] "GET /passport/image_code?imageCodeId=e16be652-3320-4d81-9fa1-9cf037ba7d75 HTTP/1.1" 500 -
+ERROR views.py:30 Error 111 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:22] "GET /passport/image_code?imageCodeId=e16be652-3320-4d81-9fa1-9cf037ba7d75 HTTP/1.1" 500 -
+ERROR views.py:30 Error 111 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:31] "GET /passport/image_code?imageCodeId=e530b7f3-16c0-439a-814e-e7c10cf80531 HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:57] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:58] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:58] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:58] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:58] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:58] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:58] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:58] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:58] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:58] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:58] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:58] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:58] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 15:59:58] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+ERROR views.py:30 Error 111 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:00:07] "GET /passport/image_code?imageCodeId=96553403-60fa-4053-b7c9-5bbae643063e HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:00:07] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/python/Flask_obj/Information/info/modules/passport/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:06:14] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:06:14] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:06:14] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:06:14] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:06:14] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:06:14] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:06:14] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:06:14] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:06:14] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:06:14] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:06:14] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:06:14] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:06:14] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+ERROR views.py:30 Error 111 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:06:16] "GET /passport/image_code?imageCodeId=458a21b3-f7e9-40d2-8300-3284716656eb HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:06:16] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+ERROR views.py:30 Error 111 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:06:17] "GET /passport/image_code?imageCodeId=c0518057-e4ee-4f77-ad18-50c8bd9711ab HTTP/1.1" 500 -
+ERROR views.py:30 Error 111 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:06:18] "GET /passport/image_code?imageCodeId=b9fd6256-2a1d-41c8-96b6-e17275e91e29 HTTP/1.1" 500 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:35] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:35] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:35] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:35] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:35] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:35] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:35] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:35] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:35] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:35] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:35] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:35] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:35] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:38] "GET /passport/image_code?imageCodeId=2732ec9b-cb1f-4401-a7bb-55e0cb97aa1a HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:38] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:40] "GET /passport/image_code?imageCodeId=0f60b4a6-fe03-46bb-a574-1ece9b0f0655 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:40] "GET /passport/image_code?imageCodeId=cf2fc36d-4a9b-4402-8e7b-c981c4477272 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:40] "GET /passport/image_code?imageCodeId=7441cddf-2fb4-423d-a688-0aec475c5e81 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:41] "GET /passport/image_code?imageCodeId=74db7c0a-d46d-4c1a-81ba-4a110ef16d8a HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:41] "GET /passport/image_code?imageCodeId=2b8e975f-4a03-4902-8629-168d70406371 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:41] "GET /passport/image_code?imageCodeId=2753987f-ebc2-4fa1-9cc3-e8a6e7f366dc HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:41] "GET /passport/image_code?imageCodeId=541338bf-aed7-4948-92a2-bf100ce4b02f HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:41] "GET /passport/image_code?imageCodeId=bbc5584a-79a3-47f6-9de3-c47173d8c2d2 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:42] "GET /passport/image_code?imageCodeId=fec98911-c410-4352-a28c-a4249c93ec17 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:42] "GET /passport/image_code?imageCodeId=dbab00d4-5579-4759-a088-9fb8dc9810d0 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:42] "GET /passport/image_code?imageCodeId=87f1a641-15a3-427c-a8c0-8f14881dc730 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:42] "GET /passport/image_code?imageCodeId=15e4e270-0a41-4968-9f58-2d78bbd3d73d HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:42] "GET /passport/image_code?imageCodeId=60e48608-6cd9-4043-8afb-1a9668a28b3f HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:43] "GET /passport/image_code?imageCodeId=ad39a7d0-9e5d-4149-a446-0f7dc06cb511 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Jun/2019 16:08:43] "GET /passport/image_code?imageCodeId=873d675b-dda0-48bc-8551-607296ccad27 HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/python/Flask_obj/Information/info/modules/passport/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
