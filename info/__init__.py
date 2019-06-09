@@ -2,6 +2,8 @@
 from logging.handlers import RotatingFileHandler
 from flask import Flask
 import logging
+
+from flask_wtf.csrf import generate_csrf
 from config import config, Config
 from flask_sqlalchemy import SQLAlchemy
 from redis import StrictRedis
@@ -61,6 +63,15 @@ def create_app(config_name, ):
     # response = make_response("")
     # response.set_cookie("key", "value", max_age=秒数)
 
+
+    # 1先网cookie中添加一个csrf_token
+    # 2往表单中去设置，在ajax中设置一个csrf_token
+    @ app.after_request
+    def after_request(response):
+        csrf_token = generate_csrf()
+        response.set_cookie("csrf_token",csrf_token)
+
+        return response
     CSRFProtect(app)
 
     # 集成flask-session
@@ -68,6 +79,9 @@ def create_app(config_name, ):
     Session(app)
     # 注册蓝图
     # 对于index_nlu只导入一次，什么时候调用，什么时候导入
+    app.add_template_filter()
+
+
     from info.modules.index import index_blu
     app.register_blueprint(index_blu)
 

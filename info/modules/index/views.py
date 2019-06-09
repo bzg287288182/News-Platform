@@ -1,6 +1,6 @@
 from flask import render_template, redirect, current_app, send_file, session
-from info import redis_store
-from info.models import User
+from info import redis_store, constants
+from info.models import User, News, Category
 from info.modules.index import index_blu
 
 
@@ -20,6 +20,32 @@ def index():
         except Exception as e:
             current_app.logger.error(e)
 
+    # 1. 显示新闻列表显示
+    clicks_news = []
+    try:
+        clicks_news = News.query.order_by(News.clicks.desc()).limit(constants.CLICK_RANK_MAX_NEWS).all()  # [obj,obj,obj...]
+    except Exception as e:
+        current_app.logger.error(e)
+
+    clicks_news_li = [news_obj.to_basic_dict() for news_obj in clicks_news ]
+    for news_obj in clicks_news:
+        clicks_news_dict = news_obj.to_basic_dict()
+        clicks_news_li.append(clicks_news_dict)
+
+    # [{},{},{}]
+    # 2.显示新闻分类
+    categorys = []
+    try:
+        categorys = Category.query.all()
+    except Exception as e:
+        current_app.logger.error(e)
+
+    category_li = []
+    for category in categorys:
+        categorys_dict = category.to_dict()
+        category_li.append(categorys_dict)
+
+
     # data = {
     #     "user_info":user
     #     "nick_name":"laozhang",
@@ -29,7 +55,9 @@ def index():
 
     # 如果uer为空，那么传一个None， 如果不为空，user.to_dict()
     data = {
-        "user_info":user.to_dict() if user else None
+        "user_info":user.to_dict() if user else None,
+        "clicks_news_li":clicks_news_li,
+        "categorys":category_li
     }
 
 
