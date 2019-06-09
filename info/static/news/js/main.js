@@ -98,7 +98,7 @@ $(function () {
         }
         $(this).addClass('active').siblings().removeClass('active');
         $(this).find('a')[0].click()
-    })
+    });
 
     // TODO 登录表单提交
     $(".login_form_con").submit(function (e) {
@@ -117,7 +117,28 @@ $(function () {
         }
 
         // 发起登录请求
-    })
+        var params = {
+            "mobile": mobile,
+            "password": password
+        };
+
+        $.ajax({
+            url: "/passport/login",
+            type: "post",
+            data: JSON.stringify(params),
+            contentType: "application/json",
+            success: function (resp) {
+            if (resp.errno == "0") {
+                // alert("fdfsdf")
+                //注册成功
+                location.reload()
+            }
+            else {
+                //注册失败
+                alert(resp.errmsg)
+            }
+        }
+    });
 
 
     // TODO 注册按钮点击
