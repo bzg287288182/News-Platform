@@ -67,10 +67,6 @@ def index():
     return render_template("news/index.html", data=data)
 
 
-
-
-
-
 @index_blu.route("/favicon.ico")
 def favicon():
     # 返回图片
