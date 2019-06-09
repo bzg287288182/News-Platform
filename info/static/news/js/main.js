@@ -155,7 +155,8 @@ $(function () {
             "mobile": mobile,
             "smscode": smscode,
             "password": password
-        }
+        };
+
         $.ajax({
             url: "/passport/register",
             type: "post",
@@ -163,6 +164,7 @@ $(function () {
             contentType: "application/json",
             success: function (response) {
                 if (response.errno == "0") {
+                    // alert("fdfsdf")
                     //注册成功
                     location.reload()
                 }

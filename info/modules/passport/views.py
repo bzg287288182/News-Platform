@@ -8,9 +8,9 @@ from info.models import User
 from info.modules.passport import passport_blu
 from info.utils.captcha.captcha import captcha
 from info.utils.response_code import RET
+from werkzeug.security import generate_password_hash
 
-
-@passport_blu.route("/register")
+@passport_blu.route("/register",methods=["POST"])
 def register():
     """
     1.接收参数 mobile， smscode， password
@@ -23,6 +23,9 @@ def register():
     8.返回响应
     :return:
     """
+    # return jsonify(errno=RET.OK, errmsg="手机")
+
+
     # 1.
     dict_data = request.json
     mobile = dict_data.get("mobile")
@@ -35,7 +38,7 @@ def register():
 
     # 3.
     if not re.match(r"1[35678]\d{6}", mobile):
-        return jsonify(errno="", errmsg="验证码格式正确")
+        return jsonify(errno=RET.PARAMERR, errmsg="验证码格式正确")
 
     try:
         real_sms_code = redis_store.get("SMS_" + mobile)
@@ -52,8 +55,11 @@ def register():
 
     user = User()
     user.nick_name = mobile
+    # user.password = password
+    # user.password_hash = generate_password_hash(password)
     user.password = password
     user.mobile = mobile
+
 
     try:
         db.session.add(user)
@@ -103,10 +109,10 @@ def get_sms_code():
 
     # 2.全局的做一个检验
     if not all([mobile,image_code,image_code_id]):
-        return jsonify(errno="",errmsg="参数不全")
+        return jsonify(errno=RET.PARAMERR,errmsg="参数不全")
 
     if not re.match(r"1[35678]\d{9}", mobile):
-        return jsonify(errno="", errmsg="手机号格式正确")
+        return jsonify(errno=RET.PARAMERR, errmsg="手机号格式正确")
 
     # 4.取出真实的验证码
     try:
