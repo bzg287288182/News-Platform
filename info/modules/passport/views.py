@@ -18,6 +18,7 @@ from info.utils.response_code import RET
 
 @passport_blu.route("/sms_code", methods=["POST"])
 def get_sms_code():
+    return  jsonify(errno=RET.OK, errmsg="OK")
     """
     1.接收参数 mobile, image_code, image_code_id
     2.校验参数，mobile 正则
@@ -64,10 +65,18 @@ def get_sms_code():
     #5.先定义一个
     sms_code_str = "%06d" % random.randint(0,999999)
     current_app.logger.info("短信验证码为%s" % sms_code_str)
-    result = CCP().send_template_sms(mobile, [sms_code_str,5],1)
+    result = CCP().send_template_sms(mobile, [sms_code_str,constants.SMS_CODE_REDIS_EXPIRES / 60],1)
 
     if result !=0:
-        pass
+        return jsonify(errno=RET.THIRDERR, errmsg="短信验证码发送失败")
+    try:
+        redis_store.setex("SMS_" + mobile, constants.SMS_CODE_REDIS_EXPIRES, sms_code_str)
+    except Exception as e:
+        current_app.__logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="手机验证码保存失败")
+
+    # 7.给前段一个响应
+    return jsonify(errno=RET.OK, errmsg="短信验证码发送成功")
 
 
 @passport_blu.route("/image_code")

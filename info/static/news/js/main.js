@@ -188,6 +188,43 @@ function sendSMSCode() {
     }
 
     // TODO 发送短信验证码
+    var params = {
+        "mobile":mobile,
+        "image_code":imageCode,
+        "image_code_id":imageCodeId
+    }
+    $.ajax({
+        url:"/passport/sms_code",
+        type:"post",
+        contentType:"application/json",
+        data: JSON.stringify(params),
+        success:function(response){
+            if (response.errno == "0"){
+                // 发送成功
+                var num = 60;
+
+                var t = sentInterval(function(){
+                    if (num == 1){
+                        // 倒计时结束，清空
+                        clearInterval(t)
+                        // 重新设置标签内容
+                        $(".get_code").html("点击获取验证码")
+                        // 还原单机事件
+                        $(".get_code").attr("onclick", "sendSMSCode();")
+                    }
+                    else{
+                        num -= 1
+                        $(".get_code").html(num + "秒")
+                    }
+                })
+            }
+            else{
+                alter(response.errmsg)
+                $("#register-image-code-err").html(response.errmsg)
+                $(".get_code").attr("onclick", "sendSMSCode();");
+            }
+        }
+    })
 }
 
 // 调用该函数模拟点击左侧按钮
