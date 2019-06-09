@@ -27,10 +27,12 @@ def index():
     except Exception as e:
         current_app.logger.error(e)
 
+
+    # clicks_news_li = []
     clicks_news_li = [news_obj.to_basic_dict() for news_obj in clicks_news ]
-    for news_obj in clicks_news:
-        clicks_news_dict = news_obj.to_basic_dict()
-        clicks_news_li.append(clicks_news_dict)
+    # for news_obj in clicks_news:
+    #     clicks_news_dict = news_obj.to_basic_dict()
+    #     clicks_news_li.append(clicks_news_dict)
 
     # [{},{},{}]
     # 2.显示新闻分类
@@ -40,11 +42,12 @@ def index():
     except Exception as e:
         current_app.logger.error(e)
 
-    category_li = []
-    for category in categorys:
-        categorys_dict = category.to_dict()
-        category_li.append(categorys_dict)
+    # category_li = []
+    # for category in categorys:
+    #     categorys_dict = category.to_dict()
+    #     category_li.append(categorys_dict)
 
+    category_li = [category.to_dict() for category in categorys]
 
     # data = {
     #     "user_info":user

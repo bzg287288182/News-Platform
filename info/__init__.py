@@ -16,6 +16,7 @@ from flask_session import Session
 #     "product":ProductConfig,
 #     "testing":TestingConfig
 # }
+from info.utils.common import do_index_class
 
 db = SQLAlchemy()
 
@@ -68,6 +69,7 @@ def create_app(config_name, ):
     # 2往表单中去设置，在ajax中设置一个csrf_token
     @ app.after_request
     def after_request(response):
+        # 通过wtf这个扩展给我们生成的token值
         csrf_token = generate_csrf()
         response.set_cookie("csrf_token",csrf_token)
 
@@ -79,7 +81,7 @@ def create_app(config_name, ):
     Session(app)
     # 注册蓝图
     # 对于index_nlu只导入一次，什么时候调用，什么时候导入
-    app.add_template_filter()
+    app.add_template_filter(do_index_class, "index_class")
 
 
     from info.modules.index import index_blu

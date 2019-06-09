@@ -89,15 +89,15 @@ def register():
     # 1.
     dict_data = request.json
     mobile = dict_data.get("mobile")
-    smscode = dict_data("smscode")
-    password = dict_data("password")
+    smscode = dict_data.get("smscode")
+    password = dict_data.get("password")
 
     # 2.
     if not all([mobile, smscode, password]):
         return jsonify(errno=RET.PARAMERR, errmsg="参数不全")
 
     # 3.
-    if not re.match(r"1[35678]\d{6}", mobile):
+    if not re.match(r"\d{6}", mobile):
         return jsonify(errno=RET.PARAMERR, errmsg="验证码格式正确")
 
     try:
