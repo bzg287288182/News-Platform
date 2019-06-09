@@ -8,6 +8,9 @@ from info.modules.index import index_blu
 def index():
     # redis_store.set("name","laowang")
     # 当进入首页，判断是否登录，如果登录，查处信息，渲染
+    # 1.自身是一个容器
+    # 2.sid 加密 cookie给了浏览器 sid == None 状态已经失效
+    # 3.sid 加密 以sid为key {"user_id":"2"} value不存在redis
     user_id = session.get("user_id")
 
     user = None

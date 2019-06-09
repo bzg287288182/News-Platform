@@ -61,7 +61,7 @@ def create_app(config_name, ):
     # response = make_response("")
     # response.set_cookie("key", "value", max_age=秒数)
 
-    # CSRFProtect(app)
+    CSRFProtect(app)
 
     # 集成flask-session
     # 说明：flask中的session是保存用户数据的容器（上下文）,而flask_session中的Session是制定session的保存路径
