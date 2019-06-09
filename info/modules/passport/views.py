@@ -1,5 +1,7 @@
 import random
 import re
+from datetime import datetime
+
 from flask import abort, request, current_app, make_response, jsonify, session
 
 from info import constants, redis_store, db
@@ -10,7 +12,52 @@ from info.utils.captcha.captcha import captcha
 from info.utils.response_code import RET
 from werkzeug.security import generate_password_hash
 
-@passport_blu.route("/register",methods=["POST"])
+
+@passport_blu.route("/login", methods=["POST"])
+def login():
+    """
+    1.接收参数
+    2.验证
+    3.查询
+    :return:
+    """
+    dict_data = request.json
+    mobile = dict_data.get("mobile")
+    passport = dict_data.get("passport")
+
+    if not all([mobile, passport]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错")
+
+    if not re.match(r"1[35678]\d{9}", mobile):
+        return jsonify(errno=RET.PARAMERR, errmsg="手机号格式正确")
+
+    try:
+        user = User.query.filter_by(mobile=mobile).first()
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="数据库查询错误")
+
+    if not user:
+        return jsonify(errno=RET.NODATA, errmsg="用户没有注册" )
+
+    if not user.check_passowrd(passport):
+        return jsonify(errno=RET.DATAERR, errmsg="密码输入错误")
+
+    user.last_login = datetime.now()
+
+    try:
+        db.session.commit()
+    except Exception as e:
+        db.session.rollback()
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="数据保存失败")
+
+    session["user_id"] = user.id
+
+    return jsonify(errno=RET.OK, errmsg="保存成功")
+
+
+@passport_blu.route("/register", methods=["POST"])
 def register():
     """
     1.接收参数 mobile， smscode， password
@@ -33,8 +80,8 @@ def register():
     password = dict_data("password")
 
     # 2.
-    if not all([mobile,smscode, password]):
-        return jsonify(errno=RET.PARAMERR,errmsg="参数不全")
+    if not all([mobile, smscode, password]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数不全")
 
     # 3.
     if not re.match(r"1[35678]\d{6}", mobile):
@@ -47,11 +94,10 @@ def register():
         return jsonify(errno=RET.DBERR, errmsg="数据库查询失败")
 
     if not real_sms_code:
-        return jsonify(errno=RET.NODATA,errmsg="短信验证码已过期")
+        return jsonify(errno=RET.NODATA, errmsg="短信验证码已过期")
 
     if real_sms_code != smscode:
         return jsonify(errno=RET.DATAERR, errmsg="验证码输入错误")
-
 
     user = User()
     user.nick_name = mobile
@@ -60,14 +106,13 @@ def register():
     user.password = password
     user.mobile = mobile
 
-
     try:
         db.session.add(user)
         db.session.commit()
     except Exception as e:
         db.session.rollback()
         current_app.logger.error(e)
-        return jsonify(errno=RET.DBERR,errmsg="数据库保存失败")
+        return jsonify(errno=RET.DBERR, errmsg="数据库保存失败")
 
     # 7.
     session["user_id"] = user.id
@@ -108,8 +153,8 @@ def get_sms_code():
     image_code_id = dict_data.get("image_code_id")
 
     # 2.全局的做一个检验
-    if not all([mobile,image_code,image_code_id]):
-        return jsonify(errno=RET.PARAMERR,errmsg="参数不全")
+    if not all([mobile, image_code, image_code_id]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数不全")
 
     if not re.match(r"1[35678]\d{9}", mobile):
         return jsonify(errno=RET.PARAMERR, errmsg="手机号格式正确")
@@ -119,7 +164,7 @@ def get_sms_code():
         real_image_code = redis_store.get("ImageCodeId_" + image_code_id)
     except Exception as e:
         current_app.logger.error(e)
-        return jsonify(errno=RET.DBERR,errmsg="数据库查询失败")
+        return jsonify(errno=RET.DBERR, errmsg="数据库查询失败")
 
     if not real_image_code:
         return jsonify(errno=RET.NODATA, errmsg="图片验证码过期了")
@@ -128,12 +173,12 @@ def get_sms_code():
         return jsonify(errno=RET.DATAERR, errmsg="图片验证码输入错误")
 
     # 核心逻辑
-    #5.先定义一个
-    sms_code_str = "%06d" % random.randint(0,999999)
+    # 5.先定义一个
+    sms_code_str = "%06d" % random.randint(0, 999999)
     current_app.logger.info("短信验证码为%s" % sms_code_str)
-    result = CCP().send_template_sms(mobile, [sms_code_str,constants.SMS_CODE_REDIS_EXPIRES / 60],1)
+    result = CCP().send_template_sms(mobile, [sms_code_str, constants.SMS_CODE_REDIS_EXPIRES / 60], 1)
 
-    if result !=0:
+    if result != 0:
         return jsonify(errno=RET.THIRDERR, errmsg="短信验证码发送失败")
     try:
         redis_store.setex("SMS_" + mobile, constants.SMS_CODE_REDIS_EXPIRES, sms_code_str)
