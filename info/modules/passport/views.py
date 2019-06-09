@@ -18,7 +18,6 @@ from info.utils.response_code import RET
 
 @passport_blu.route("/sms_code", methods=["POST"])
 def get_sms_code():
-    return  jsonify(errno=RET.OK, errmsg="OK")
     """
     1.接收参数 mobile, image_code, image_code_id
     2.校验参数，mobile 正则
@@ -34,6 +33,8 @@ def get_sms_code():
     # json_data = request.data
     # dict_data = json.loads(json_data)
     # 如何去接收一个前段传入的json类型的数据
+
+
     dict_data = request.json
 
     # 1.接收参数 mobile, image_code, image_code_id
@@ -50,7 +51,7 @@ def get_sms_code():
 
     # 4.取出真实的验证码
     try:
-        real_image_code = redis_store.get("ImageCodeId" + image_code_id)
+        real_image_code = redis_store.get("ImageCodeId_" + image_code_id)
     except Exception as e:
         current_app.logger.error(e)
         return jsonify(errno=RET.DBERR,errmsg="数据库查询失败")
@@ -59,7 +60,7 @@ def get_sms_code():
         return jsonify(errno=RET.NODATA, errmsg="图片验证码过期了")
 
     if image_code.upper() != real_image_code.upper():
-        return jsonify(errno=RET.DATAERR, errmsg="验证码输入错误")
+        return jsonify(errno=RET.DATAERR, errmsg="图片验证码输入错误")
 
     # 核心逻辑
     #5.先定义一个
