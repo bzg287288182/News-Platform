@@ -122,7 +122,7 @@ $(function () {
 
     // TODO 注册按钮点击
     $(".register_form_con").submit(function (e) {
-        // 阻止默认提交操作
+        // 阻止默认提交操作,表单自带提交功能,阻止表单的提交
         e.preventDefault()
 
         // 取到用户输入的内容
@@ -151,11 +151,33 @@ $(function () {
         }
 
         // 发起注册请求
-
+        var params = {
+            "mobile": mobile,
+            "smscode": smscode,
+            "password": password
+        }
+        $.ajax({
+            url: "/passport/register",
+            type: "post",
+            data: JSON.stringify(params),
+            contentType: "application/json",
+            success: function (response) {
+                if (response.errno == "0") {
+                    //注册成功
+                    location.reload()
+                }
+                else {
+                    //注册失败
+                    alert(response.errmsg)
+                    $("#register-password-err").html(response.errmsg)
+                    $("#register-password-err").show()
+                }
+            }
+        })
     })
 })
 
-var imageCodeId = ""
+var imageCodeId = "";
 
 // TODO 生成一个图片验证码的编号，并设置页面中图片验证码img标签的src属性
 function generateImageCode() {
