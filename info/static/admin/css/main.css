@@ -63,7 +63,7 @@ body{
 }
 
 .user_info img{
-	display:block;
+	/*display:block;*/
 	margin:20px auto 0;
 	width:68px;
 	height:68px;
