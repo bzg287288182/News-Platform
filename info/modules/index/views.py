@@ -1,7 +1,53 @@
-from flask import render_template, redirect, current_app, send_file, session
+from flask import render_template, redirect, current_app, send_file, session, request, jsonify
 from info import redis_store, constants
 from info.models import User, News, Category
 from info.modules.index import index_blu
+from info.utils.response_code import RET
+
+
+@index_blu.route("/news_list")
+def get_news_list():
+    """
+    1.接收参数，cid page per_page
+    2.校验参数合法性
+    3.查询出新闻
+    4.返回响应
+    :return:
+    """
+    cid = request.args.get("cid")
+    page = request.args.get("page", 1)
+    per_page = request.args.get("per_page", 10)
+
+    try:
+        cid = int(cid)
+        page = int(page)
+        per_page = int(per_page)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+
+    # 3.查询出的新闻（关系分类）（创建时间的排序）
+    try:
+        paginate = News.quuery.filter(News.category_id == cid).order_by(News.create_time.desc()).paginate(page, per_page, False)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="数据库查询错误")
+
+    news_list = paginate.items
+    current_page = paginate.page
+    total_page = paginate.pages
+
+    news_dict_li = []
+    for news in news_list:
+        news_dict_li.append(news.to_basic_dict())
+
+    data = {
+        "news_dict_li":news_dict_li,
+        "current_page":current_page,
+        "total_page":total_page
+    }
+
+    return jsonify(errno=RET.OK, errmsg="ok")
 
 
 @index_blu.route("/")
