@@ -1115,3 +1115,496 @@ INFO _internal.py:122 127.0.0.1 - - [09/Jun/2019 20:41:43] "POST /passport/login
 INFO _internal.py:122 127.0.0.1 - - [09/Jun/2019 20:41:43] "GET / HTTP/1.1" 200 -
 INFO _internal.py:122 127.0.0.1 - - [09/Jun/2019 20:41:44] "GET /passport/logout HTTP/1.1" 200 -
 INFO _internal.py:122 127.0.0.1 - - [09/Jun/2019 20:41:44] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:17:01] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:17:01] "GET /static/news/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:17:01] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:17:01] "GET /static/news/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:17:01] "GET /static/news/images/news_pic.jpg HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:17:01] "GET /static/news/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:17:01] "GET /static/news/images/person.png HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:17:01] "GET /static/news/js/main.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:17:01] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:17:01] "GET /static/news/images/pic_code.png HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:17:02] "GET /static/news/images/clock.png HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:17:02] "GET /static/news/images/hit_icon.png HTTP/1.1" 304 -
+ERROR views.py:33 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:17:02] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/python/Flask_obj/Information/info/modules/index/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:30] "GET / HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:30] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:30] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:36] "GET / HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:36] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:36] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:37] "GET / HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:37] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:37] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:37] "GET / HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:37] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:37] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:43] "GET /static/news/images/shutoff.png HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:46] "POST /passport/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:46] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:46] "GET /static/news/images/person01.png HTTP/1.1" 304 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:46] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:49] "GET / HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:49] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:49] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:49] "GET / HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:49] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:49] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:50] "GET / HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:50] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:50] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:50] "GET / HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:50] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:50] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:50] "GET / HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:50] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:50] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:50] "GET / HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:50] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:50] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:51] "GET /passport/logout HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:51] "GET / HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:51] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:55] "GET / HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:24:55] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:25:08] "GET / HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:25:09] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:25:43] "GET / HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:25:44] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:25:57] "GET / HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:25:57] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:26:03] "GET /news_list?cid=2&page=1 HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:26:04] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:26:04] "GET /news_list?cid=3&page=1 HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:26:05] "GET /news_list?cid=2&page=1 HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:26:05] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:26:25] "GET / HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:26:25] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/python/Flask_obj/Information/info/modules/index/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:27:09] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:27:09] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:27:09] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:27:09] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:27:09] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:27:09] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:27:09] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:27:09] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:27:09] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:27:09] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:27:09] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:27:09] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+ERROR views.py:44 type object 'News' has no attribute 'quuery'
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:27:09] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/python/Flask_obj/Information/info/modules/index/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:31:25] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:31:25] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:31:26] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:31:26] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:31:38] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:31:38] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:31:38] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:31:38] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:31:38] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:31:38] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:31:38] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:31:38] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:31:38] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:31:38] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:31:38] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:31:38] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:31:38] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:32:29] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:32:29] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:32:29] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:32:29] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:32:29] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:32:29] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:32:29] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:32:29] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:32:29] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:32:29] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:32:29] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:32:29] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:32:29] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/python/Flask_obj/Information/info/modules/index/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:36:02] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:36:02] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:36:29] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:36:29] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:38:35] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:38:35] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:39:16] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:39:16] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:39:17] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:39:17] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:40:48] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:40:48] "GET /news_list?cid=0&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:40:58] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:40:58] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:40:58] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:40:58] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:40:58] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:40:58] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:40:58] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:40:58] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:40:58] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:40:58] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:40:58] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:40:58] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:42:04] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:43:45] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:47:14] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:47:14] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:47:14] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:47:14] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:47:14] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:47:14] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:47:14] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:47:14] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:47:14] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:47:14] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:47:14] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:47:14] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:47:14] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:49:50] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:49:50] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:49:51] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:49:51] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:49:53] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:49:53] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:49:53] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:49:53] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:49:53] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:49:53] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:49:53] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:49:53] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:49:53] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:49:53] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:49:53] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:49:53] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:49:53] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:41] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:41] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:41] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:41] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:41] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:41] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:41] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:41] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:41] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:41] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:41] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:41] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:41] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:53] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:53] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:53] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:53] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:53] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:53] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:53] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:53] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:53] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:53] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:53] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:53] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:50:53] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:51:27] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:51:27] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:51:27] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:51:27] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:51:27] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:51:27] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:51:27] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:51:27] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:51:27] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:51:27] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:51:27] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:51:27] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:51:27] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:52:57] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:52:57] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:52:57] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:52:57] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:52:57] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:52:57] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:52:57] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:52:57] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:52:57] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:52:57] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:52:57] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:52:57] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 10:52:57] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:53] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:53] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:53] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:53] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:53] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:53] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:53] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:53] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:53] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:53] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:53] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:53] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:53] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:58] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:58] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:58] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:58] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:59] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:59] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:59] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:59] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:59] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:59] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:17:59] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:18:00] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:18:00] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:18:00] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:18:00] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:18:00] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:18:00] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:18:00] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:18:00] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:18:00] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:18:00] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:18:00] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:18:01] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:18:01] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:18:01] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:18:01] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:18:01] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:18:01] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:32:40] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:32:40] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:32:41] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:32:41] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:32:41] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:32:41] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:32:41] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:32:41] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:32:41] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:32:41] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:32:41] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:32:41] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:32:41] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:32:41] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:32:41] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:34:33] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:34:33] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:34:42] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:34:42] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:34:42] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:34:42] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:34:42] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:34:42] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:34:42] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:34:42] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:34:43] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:34:43] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:34:43] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:34:43] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:34:43] "GET /get_news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:14] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:14] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:14] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:14] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:14] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:14] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:14] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:14] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:14] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:14] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:15] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:15] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:15] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:56] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:56] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:56] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:56] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:56] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:56] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:56] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:56] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:56] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:56] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:56] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:56] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:35:57] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/python/Flask_obj/Information/info/modules/index/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:40:56] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:40:56] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:40:56] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:40:56] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:40:56] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:40:56] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:40:56] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:40:56] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:40:56] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:40:56] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:40:56] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:40:56] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:40:56] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:30] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:30] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:30] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:30] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:30] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:30] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:30] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:30] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:30] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:30] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:30] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:30] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:30] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:32] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:32] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:32] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:32] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:32] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:32] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:32] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:32] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:32] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:32] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:32] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:32] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:41:32] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:42:33] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:42:33] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:42:33] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:42:33] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:42:33] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:42:33] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:42:33] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:42:33] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:42:33] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:42:33] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:42:33] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:42:33] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:42:33] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:44:14] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:44:14] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:44:14] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:44:14] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:44:14] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:44:14] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:44:14] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:44:14] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:44:14] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:44:14] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:44:14] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:44:14] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 11:44:14] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 457-588-371
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 15:12:55] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 15:12:55] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 15:12:55] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 15:12:55] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 15:12:55] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 15:12:55] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 15:12:55] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 15:12:55] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 15:12:55] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 15:12:55] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 15:12:55] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 15:12:55] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 15:12:55] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 15:13:02] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 15:13:03] "POST /passport/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 15:13:03] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 15:13:03] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Jun/2019 15:13:03] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -

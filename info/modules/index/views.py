@@ -19,6 +19,7 @@ def get_news_list():
     per_page = request.args.get("per_page", 10)
 
     try:
+
         cid = int(cid)
         page = int(page)
         per_page = int(per_page)
@@ -27,8 +28,18 @@ def get_news_list():
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
 
     # 3.查询出的新闻（关系分类）（创建时间的排序）
+    filters = []
+    if cid != 1:
+        filters.append(News.category_id == cid)
+
     try:
-        paginate = News.quuery.filter(News.category_id == cid).order_by(News.create_time.desc()).paginate(page, per_page, False)
+        paginate = News.query.filter(*filters).order_by(News.create_time.desc()).paginate(page, per_page, False)
+
+        # if cid == 1:
+        #     paginate = News.query.filter().order_by(News.create_time.desc()).paginate(page, per_page, False)
+        # else:
+        #     paginate = News.query.filter(News.category_id == cid).order_by(News.create_time.desc()).paginate(page, per_page, False)
+
     except Exception as e:
         current_app.logger.error(e)
         return jsonify(errno=RET.DBERR, errmsg="数据库查询错误")
@@ -47,7 +58,7 @@ def get_news_list():
         "total_page":total_page
     }
 
-    return jsonify(errno=RET.OK, errmsg="ok")
+    return jsonify(errno=RET.OK, errmsg="ok", data=data)
 
 
 @index_blu.route("/")
