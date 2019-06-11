@@ -35,11 +35,20 @@ def detail(news_id):
 
     news.clicks += 1
 
+    # 详情页收藏和已收藏是有is_collected控制
+    is_collected = False
+    # 1.保证用户存在
+    # 2.新闻肯定存在
+    # 3.该条新闻在用户收藏的列表中
+    # 4.用户收藏新闻的列表——>user.collection_news.all()
+    if user and news in user.collection_news.all():
+        is_collected = True
 
     data = {
         "user_info":user.to_dict() if user else None,
         "clicks_news_li":clicks_news_li,
-        "news":news.to_dict()
+        "news":news.to_dict(),
+        "is_collected":is_collected
     }
 
 
