@@ -21,6 +21,7 @@ def news_collect():
 
     if not user:
         return jsonify(errno=RET.SESSIONERR, errmsg="用户未登录")
+
     news_id = request.json.get("news_id")
     action = request.json.get("action")
 
