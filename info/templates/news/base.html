@@ -20,15 +20,7 @@
             {% block menuBlock %}
 
             {% endblock %}
-                {% for category in data.categorys %}
-                    {% if loop.index == 1 %}
-                        <li class="active" data-cid="{{ category.id }}"><a href="javascript:;">{{ category.name }}</a></li>
-                    {% else %}
-                        <li data-cid="{{ category.id }}"><a href="javascript:;">{{ category.name }}</a></li>
 
-                    {% endif %}
-
-                {% endfor %}
 
             {% if data.user_info %}
                 <div class="user_login fr">

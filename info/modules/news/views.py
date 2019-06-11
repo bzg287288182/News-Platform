@@ -24,21 +24,12 @@ def detail(news_id):
 
     clicks_news_li = [news.to_basic_dict() for news in clicks_news]
 
-
-    # if not news_id:
-    #     abort(404)
-    # try:
-    #     news_id = int(news_id)
-    # except Exception as e:
-    #     current_app.logger.error(e)
-    #     abort(404)
-
+    # 显示新闻的具体信息
     news = None
     try:
         news = News.query.get(news_id)
     except Exception as e:
         current_app.logger.error(e)
-
     if not news:
         abort(404)
 
