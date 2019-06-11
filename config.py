@@ -27,6 +27,7 @@ class Config(object):
     # 设置session保存时间
     PERMANENT_SESSION_LIFETIME = 86400 * 2
 
+    # SQLALCHEMY_COMMIT_ON_
 
 class DevelopConfig(Config):
     DEBUG = True
