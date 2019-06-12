@@ -181,11 +181,11 @@ def news_collect():
         # 当收藏一条新闻的时候，应该先去判断是否已收藏
         if news in user. collection_news:
             user.collection_news.append(news)
-        else:
-            if news in user.collection_news:
-                user.collection_news.remove(news)
+    else:
+        if news in user.collection_news:
+            user.collection_news.remove(news)
 
-        return jsonify(errno=RET.OK, errmsg="OK")
+    return jsonify(errno=RET.OK, errmsg="OK")
 
 
 
@@ -239,6 +239,12 @@ def detail(news_id):
 
     for comment in comments:
         comment_dict = comment.to_dict()
+        comment_dict["is_like"] = False
+        # 如果comment_dict["is_like"] = True 代表已经点赞
+        # 如果该条评论的id在我的点赞id列表中
+        if user and CommentLike.query.filter(CommentLike.comment_id==comment.id, CommentLike.user_id==user.id).first():
+            comment_dict["is_like"] = True
+
         comment_dict_li.append(comment_dict)
 
 
